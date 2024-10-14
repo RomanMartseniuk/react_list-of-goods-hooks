@@ -41,6 +41,11 @@ export const App: React.FC = () => {
     goods.reverse();
   }
 
+  const handleReverse = () => {
+    setSortBy(0);
+    setToReverse(false);
+  };
+
   return (
     <div className="section content">
       <div className="buttons">
@@ -79,8 +84,7 @@ export const App: React.FC = () => {
             type="button"
             className={cn('button is-danger is-light')}
             onClick={() => {
-              setSortBy(0);
-              setToReverse(false);
+              handleReverse();
             }}
           >
             Reset
