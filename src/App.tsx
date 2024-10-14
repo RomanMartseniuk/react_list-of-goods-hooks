@@ -83,9 +83,7 @@ export const App: React.FC = () => {
           <button
             type="button"
             className={cn('button is-danger is-light')}
-            onClick={() => {
-              handleReverse();
-            }}
+            onClick={() => handleReverse()}
           >
             Reset
           </button>
